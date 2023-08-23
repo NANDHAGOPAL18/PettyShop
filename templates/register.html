@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/register.css') }}">
+    <!-- <link rel="stylesheet" href="/stationaryshop/static/css/register.css"> -->
+</head>
+<body>
+    <div class="container">
+        <form action="{{ url_for('register') }}" method="post">
+        <!-- <form action=""> -->
+            <div class="shopname">NAMMA KADAI</div>
+            <div class="msg">{{ msg }}</div>
+            <div class="inputs">
+                <input type="text" id="username" name="username" placeholder="Enter a Username" required>
+                <input type="password" id="password" name="password" placeholder="Enter a Password" required>
+                <input type="email" name="email" id="email" placeholder="Enter a Email ID" required>
+                <input type="number" name = "amount" id = "amount" placeholder="Enter your Amount" required>
+            </div>
+            <div class="btn">
+                <button type="submit" value="Sign Up">Register</button>
+            </div>
+        </form>
+        <h3>
+            <div class="bottom">Already have an account ? <a class="bottom" href="{{ url_for('index')}}"> Sign In here</a></div>
+        </h3>
+    </div>
+</body>
+</html>

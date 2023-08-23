@@ -1,0 +1,130 @@
+body{
+    background-image: url(../images/secondpage.jpg);
+    /* background-color: black; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(245, 228, 220);
+}
+a{
+    color:rgb(28, 5, 92);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    align-self: flex-end;
+    margin-right: 50px;
+    font-weight: bolder;
+}
+
+.shopname p{
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(35, 0, 122);
+    margin-top: 5rem;
+    font-size: xx-large;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.shopname h3{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(35, 12, 212);
+    margin-top: 2rem;
+    font-size: large;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.btnbuy button{
+    width:14.3rem;
+    height:4rem;
+    align-self: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color:whitesmoke;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size:large;
+    border-color: rgb(16, 148, 214);
+    border-radius: 5px;
+    background:linear-gradient(to right,rgb(4, 126, 137),rgb(72, 221, 255) 55%);
+}
+.btnsale button{
+    width:14.3rem;
+    height:4rem;
+    align-self: center;
+    color:whitesmoke;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    font-size:large;
+    border-color: rgb(214, 16, 16);
+    border-radius: 5px;
+    background:linear-gradient(to right,rgb(165, 6, 138),rgb(255, 72, 231) 55%);
+}
+.btnbuy button:hover{
+    background:linear-gradient(to left,rgb(4, 126, 137),rgb(72, 221, 255) 55%);
+}
+
+.btnsale button:hover{
+    background:linear-gradient(to left,rgb(165, 6, 138),rgb(255, 72, 231) 55%);
+}
+
+.shp{
+    display: grid;
+    place-items: center;
+    background-color: rgba(255, 153, 0, 0.1);
+    margin: 4rem 0;
+    width: 100%;
+    position: sticky;
+    /* padding: 1.5rem; */
+}
+
+.shp table{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    width: 600px;
+    box-shadow: -1px 12px 12px -6px rgba(0,0,0,0.5);
+}
+
+table,td,th{
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    text-align: center;
+    cursor: pointer;
+}
+
+td{
+    font-size: 18px;
+}
+
+th{
+    background-color: rgb(255, 145, 0);
+    color: white;
+}
+tr:nth-child(odd){
+    background-color: rgb(230, 198, 173);
+}
+tr:nth-child(odd):hover{
+    background-color: rgb(253, 231, 103);
+    transform: scale(1.2);
+    transition: transform 300ms ease-in;
+}
+
+tr:nth-child(even){
+    background-color:#ededed;
+}
+tr:nth-child(even):hover{
+    background-color: lightgray;
+    transform: scale(1.2);
+    transition: transform 300ms ease-in;
+}

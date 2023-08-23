@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nammakadai History</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/historypage.css') }}">
+    <!-- <link rel="stylesheet" href="/stationaryshop/static/css/historypage.css"> -->
+</head>
+<body>
+    <a href="{{ url_for('index')}}">Log out</a>
+    <div class="shopname">
+        <p>WELCOME TO NAMMA KADAI !!!</p>
+        <h3>Available Balance : Rs. {{val}}</h3>
+    </div>
+    <form action="/purchasehistory" method = "post" enctype="multipart/form-data">
+        <div class="btnbuy">
+            <button type="submit">PURCHASE HISTORY</button>
+        </div>
+    </form>
+    <form action="/saleshistory" method = "post" enctype="multipart/form-data">
+        <div class="btnsale">
+            <button type="submit">SALES HISTORY</button>
+        </div>
+    </form>
+    <div class="shp">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Date</th>
+                <th>Qty</th>
+                <th>Rate</th>
+                <th>Amount</th>
+                <th>Item Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+                <td>{{ row[4] }}</td>
+                <td>{{ row[5] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>

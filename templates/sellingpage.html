@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NammaKadai Sales</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/sellingpage.css') }}">
+    <!-- <link rel="stylesheet" href="/stationaryshop/static/css/sellingpage.css"> -->
+</head>
+<body>
+    <a href="{{ url_for('index')}}">Log out</a>
+    <p>{{val}}</p>
+    <div class="shp">
+    <form action="/showproducts" method="post">
+        <div class="btn">
+            <button type = "submit" value = "submit">Show Items</button>
+        </div>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Item ID</th>
+                <th>Item Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[4] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    <div>
+        <form action="/sales" method="post" class="sls">
+            <h3>SALE A ITEM</h3>
+            <input type="text" name = "item_name" placeholder="Enter an Item name" required>
+            <input type="number" name = "qty" min = "1">
+            <div class="btn">
+                <button type="submit" value="submit">Sale Now</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

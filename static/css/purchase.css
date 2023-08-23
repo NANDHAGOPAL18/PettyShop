@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    background-image: url(../images/purchase.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+a{
+    color:rgb(28, 5, 92);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    text-align: end;
+    margin-right: 50px;
+}
+.addi{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 2rem; */
+    margin: 2rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-style: oblique;
+    letter-spacing: 1px;
+    color: rgb(129, 7, 98);
+    background-color: rgba(73, 5, 78, 0.1);
+    /* width: 100%; */
+    /* position: sticky; */
+}
+.addi p{
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+}
+
+.addi input{
+    margin: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px 2px;
+    border-bottom: 3px solid red;
+}
+
+.addi button{
+    width:8rem;
+    height:2rem;
+    color:whitesmoke;
+    border-color: rgb(214, 16, 178);
+    border-radius: 5px;
+    background:linear-gradient(to right,rgb(165, 6, 138),rgb(255, 72, 212) 55%);
+    margin-top: 1rem;
+}
+
+.shp{
+    display: grid;
+    place-items: center;
+    background-color: rgba(255, 153, 0, 0.1);
+    margin: 4rem 0;
+    width: 100%;
+    position: sticky;
+    /* padding: 1.5rem; */
+}
+
+.shp .btn button{
+    width:8rem;
+    height:2rem;
+    color:rgb(2, 76, 13);
+    border-color: rgb(24, 244, 75);
+    border-radius: 5px;
+    background:linear-gradient(to right,rgb(6, 165, 35),rgb(72, 255, 112) 55%);
+    margin: 1.5rem;
+}
+
+.shp table{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    width: 600px;
+    box-shadow: -1px 12px 12px -6px rgba(0,0,0,0.5);
+}
+
+table,td,th{
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    text-align: center;
+    cursor: pointer;
+}
+
+td{
+    font-size: 18px;
+}
+
+th{
+    background-color: blue;
+    color: white;
+}
+tr:nth-child(odd){
+    background-color: lightblue;
+}
+tr:nth-child(odd):hover{
+    background-color: dodgerblue;
+    color: white;
+    transform: scale(1.2);
+    transition: transform 300ms ease-in;
+}
+
+tr:nth-child(even){
+    background-color:#ededed;
+}
+tr:nth-child(even):hover{
+    background-color: lightgray;
+    transform: scale(1.2);
+    transition: transform 300ms ease-in;
+}
+
+.purchs{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-style: oblique;
+    letter-spacing: 1px;
+    color: rgba(144, 10, 10, 0.633);
+    background-color: rgba(137, 149, 3, 0.1);
+    padding: 1rem;
+}
+.purchs input{
+    margin: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px 2px;
+    border-bottom: 3px solid red;
+}
+
+.purchs button{
+    width:8rem;
+    height:2rem;
+    color:whitesmoke;
+    border-color: rgb(214, 16, 178);
+    border-radius: 5px;
+    background:linear-gradient(to right,rgb(165, 6, 138),rgb(255, 72, 212) 55%);
+    margin-top: 1rem;
+}
+
+

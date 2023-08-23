@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NammaKadai Purchase</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/purchase.css') }}">
+    <!-- <link rel="stylesheet" href="/stationaryshop/static/css/purchase.css"> -->
+</head>
+<body>
+    <a href="{{ url_for('index')}}">Log out</a>
+    <div>
+        <form action="/additems" method="post" class="addi">
+            <h3>ADD ITEM TO TABLE</h3>
+            <input type="text" name = "item_name" placeholder="Add an Item" required>
+            <input type="number" name = "price" placeholder="Price of Item" required min="1">
+            <input type="number" name = "quantity" placeholder="Enter Quantity" required min="1" >
+            <button type = "submit" value = "submit">Add Item</button>
+            <p>{{val}}</p>
+        </form>
+    </div>
+    <div class="shp">
+    <form action="/showproduct" method="post">
+        <div class="btn">
+            <button type = "submit" value = "submit">Show Items</button>
+        </div>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Item ID</th>
+                <th>Item Name</th>
+                <th>Price</th>
+                <th>quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[4] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    <div>
+        <form action="/purches" method="post" class="purchs">
+            <h3>PURCHASE A ITEM</h3>
+            <input type="text" name = "item_name" placeholder="Enter a Item Name">
+            <input type="number" name = "qty" min = "1">
+            <div class="btn">
+                <button type="submit" value="submit">Buy Now</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

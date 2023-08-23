@@ -1,0 +1,18 @@
+customers table:
+
+create table customers (id int AUTO_INCREMENT ,username varchar(255),password varchar(255),email varchar(255) ,balance varchar(255),primary key(id));
+
+item table :
+
+ create table item (item_id int AUTO_INCREMENT ,item_name varchar(255),price varchar(255),username varchar(255) ,quantity varchar(255),primary key(item_id));
+
+
+sales table :
+
+create table sales (sales_id int AUTO_INCREMENT ,date  timestamp default current_timestamp not null ,qty varchar(255),rate varchar(255) ,amount varchar(255), item_name varchar(255) , username varchar(255) ,primary key(sales_id));
+
+
+purchase table :
+
+
+create table purchase (purchase_id int AUTO_INCREMENT ,date  timestamp default current_timestamp not null ,qty varchar(255),rate varchar(255) ,amount varchar(255), item_name varchar(255) , username varchar(255) ,primary key(purchase_id));

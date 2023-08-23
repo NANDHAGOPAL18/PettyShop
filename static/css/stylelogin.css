@@ -1,0 +1,186 @@
+body{
+    background-image: url(../images/login.jpg);
+    background-color: black;
+    background-size: cover;
+    background-position: center; 
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.box1{
+    height: 90px;
+    width: 90px;
+    border: 30px solid rgb(93, 9, 73);
+    border-style:double;
+    background-color: rgb(246, 32, 207);
+    margin-bottom: 480px;
+    margin-left: 300px;
+    border-radius: 100px;
+    filter: blur(5px);
+}
+.box2{
+    height: 90px;
+    width: 90px;
+    border: 30px solid rgb(2, 51, 96);
+    border-style:double;
+    background-color: rgb(32, 203, 246);
+    margin-top: 28.5em;
+    margin-left: -22em;
+    border-radius: 100px;
+}
+.loginpage{
+    display : flex;
+    width: 330px;;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.15);
+    /* box-shadow: 2px 2px 15px rgb(180, 180, 180); */
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    
+}
+.shopname{
+    color: aliceblue;
+    margin-top: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+
+}
+.loginhead{
+    font-family:Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+.loginhead :first-letter{
+    text-decoration: underline;
+    font-size: 2rem;
+}
+.input input{
+    border-top: none;
+    border-left: none;
+    border-right : none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 14rem;
+    height: 2rem;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.btn button{
+    width:14.3rem;
+    height:2rem;
+    color:whitesmoke;
+    border-color: rgb(214, 16, 16);
+    border-radius: 5px;
+    background:linear-gradient(to right,rgb(165, 6, 6),rgb(255, 72, 72) 55%);
+}
+.btn{
+    margin-top:10px ;
+    margin-bottom: 20px;
+}
+
+.fp a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    color: rgb(19, 0, 141);
+}
+
+.para1{
+    text-align: center;
+    font-size: .8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.twitter a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    word-spacing: .5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color:rgb(255, 255, 255);
+    border-color: rgb(16, 191, 214);
+    border-radius: 5px;
+    background:linear-gradient(to right,rgb(6, 138, 165) ,rgb(72, 237, 255) );
+}
+.twitter{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.facebook a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    word-spacing: .5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color:rgb(255, 255, 255);
+    border-color: rgb(16, 191, 214);
+    border-radius: 5px;
+    background:linear-gradient(to right,rgb(22, 6, 165),rgb(127, 135, 234));
+}
+.facebook{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.loginpage a:hover{
+    color: black;
+}
+
+.loginpage input:hover{
+    border-color: rgb(255, 255, 255);
+    border-width: 5px;
+}
+
+.btn :hover{
+    background:linear-gradient(to right,rgb(255, 72, 72),rgb(165, 6, 6));
+}
+
+input[type="text"]::placeholder{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+input[type="password"]::placeholder{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.msg{
+    text-align: center;
+    color: antiquewhite;
+    padding-top: 10px;
+}
+
+.bottom{
+    text-align: center;
+    color: whitesmoke;
+}
+
+.bottom a{
+    color: rgb(10, 3, 150);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.input:focus{
+    color: blanchedalmond;
+}
+
